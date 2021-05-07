@@ -1,1 +1,1 @@
-# cornell-digitized
+# i miss my campus

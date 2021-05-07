@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto&display=swap');
+
+/* home styling */
+body {
+    font-family: "Roboto";
+}
+
+body, html, #content {
+    height: 766px;
+}
+
+h1, h2, h3, h4 {
+    font-family: "DM Serif Display";
+}
+
+.hidden {
+    display: none;
+}
+
+#description {
+    top: 35%;
+    max-width: 20rem;
+    margin-left: 5%;
+    z-index: 1;
+}
+
+#sound p {
+    margin-top: 1px;
+}
+
+#soundBtns button {
+    border: none;
+    background-color: transparent;
+    width: 30px;
+}
+
+#pause {
+    width: 35px !important;
+}
+
+#play {
+    background-color: white !important;
+    top: 0;
+    left: 0;
+}
+
+#soundBtns img {
+    width: 100%;
+}
+
+/* modal styling */
+#modal {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    z-index: 2;
+    bottom: -1080px;
+    background-color: white;
+    transition: bottom 1s ease-in-out;
+}
+
+.pink {
+    background-color: pink !important;
+}
+
+.slide-up {
+    bottom: 0 !important;
+}
+
+.slide-down {
+    bottom: -1080px !important;
+}
+
+/* map styling */
+#map-container {
+    height: 100%;
+    width: 100%;
+}
+
+#map {
+    width: 1030px;
+}
+
+#main-map {
+    height: 100%;
+}
+
+.hover, #beebe {
+    top: 0;
+    left: 0;
+    transition: opacity .2s ease-in-out;
+}
+
+.hover:hover {
+    opacity: 0;
+}
+
+.map-img {
+    width: 100%;
+}
+
+#zeus-container {
+    top: 360px;
+    left: 310px;
+    width: 100px;
+    height: 59.5px;
+}
+
+#zeus {
+    top: -2.5px;
+    left: -2px;
+}
+
+#zeus-color {
+    width: 98.5%
+}
+
+#beebe-container {
+    width: 283px;
+    top: 224px;
+    left: 465px;
+}
+
+#canoe-container {
+    width: 90px;
+    left: 83.5px;
+    top: 26px;
+    z-index: 1;
+}
+
+#canoe {
+    top: -2.1px;
+    left: 0.5px;
+    width: 97.3%;
+}
+
+#canoe-container:hover ~ #beebe {
+    opacity: 0;
+}
+
+#kennedy-container {
+    width: 110px;
+    top: 396px;
+    left: 500px;
+}
+
+#kennedy {
+    top: -3px;
+    left: -1.5px;
+}
+
+#kennedy-color {
+    width: 97.73%;
+}
+
+#gates-container {
+    width: 100px;
+    top: 564px;
+    left: 410px;
+}
+
+#gates {
+    top: -2px;
+}
+
+#bethe-container {
+    width: 100px;
+    top: 475px;
+    left: 135px;
+}
+
+#bethe-color {
+    width: 99%
+}
+
+#bethe, #dickson {
+    top: -1.8px;
+}
+
+#dickson-container {
+    width: 175px;
+    top: 120px;
+    left: 435px;
+}
+
+/* mobile styling */
+@media screen and (max-width: 1200px) {
+    #content {
+        display: block !important;
+    }
+
+    #description {
+        position: static !important;
+    }
+
+    #map-container {
+        justify-content: center !important;
+    }
+
+    /* #map-container {
+        height: auto;
+    } */
+
+    /* #map img {
+        max-width: 100%;
+        height: auto;
+    } */
+}
