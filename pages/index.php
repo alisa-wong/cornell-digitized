@@ -1,9 +1,11 @@
 <?php
-// $showModal = "";
+// $locations = array("zeus", "kennedy", "beebe", "gates", "dickson", "bethe");
 
+// $close = $_GET["close"];
 // $location = $_GET["location"];
-// if ($location) {
-//     $showModal = "active";
+
+// if ($location && !in_array($location, $locations)) {
+//     $location = "";
 // }
 
 ?>
@@ -23,7 +25,7 @@
 <body class="d-flex flex-column justify-content-center">
     <div id="content" class="d-flex position-relative">
         <div id="description" class="d-flex flex-column position-absolute">
-            <h1>i miss my campus</h1>
+            <a href="/"><h1>i miss my campus</h1></a>
             <p>welcome to cornell university from the perspective of a senior graduating during the COVID-19 pandemic</p>
             <div id="sound" class="d-flex flex-row"><p>chimes</p>
                 <div id="soundBtns" class="d-inline position-relative">
@@ -41,17 +43,17 @@
             </div>
         </div>
 
-        <div id="map-container" class="me-4 d-flex flex-row justify-content-end">
+        <div id="map-container" class="me-4">
             <div id="map" class="position-relative">
                 <img alt="map" id="main-map" class="position-absolute" src="/public/images/map.png"> 
 
-                <div id="zeus-container" class="link position-absolute" data-value="zeus">
+                <div href="?location=zeus" id="zeus-container" class="link position-absolute" data-value="zeus">
                     <img alt="temple of zeus colored" id="zeus-color" class="map-img" src="/public/images/zeus-color.png">
                     <img alt="temple of zeus" id="zeus" class="position-absolute hover map-img" src="/public/images/zeus.png">
                 </div>
 
                 <div id="beebe-container" class="position-absolute">
-                    <div id="canoe-container" class="link position-absolute" data-value="beebe">
+                    <div href="?location=beebe" id="canoe-container" class="link position-absolute" data-value="beebe">
                         <img alt="canoe colored" id="canoe-color" class="map-img" src="/public/images/beebe-color.png">
                         <img alt="canoe" id="canoe" class="position-absolute hover map-img" src="/public/images/beebe.png">
                     </div>
@@ -59,17 +61,17 @@
                     <img alt="beebe lake" id="beebe" class="position-absolute map-img" src="/public/images/lake.png">
                 </div>
 
-                <div id="kennedy-container" class="link position-absolute" data-value="kennedy">
+                <div href="?location=kennedy" id="kennedy-container" class="link position-absolute" data-value="kennedy">
                     <img alt="kennedy hall colored" id="kennedy-color" class="map-img" src="/public/images/kennedy-color.png">
                     <img alt="kennedy hall" id="kennedy" class="position-absolute hover map-img" src="/public/images/kennedy.png">
                 </div>
 
-                <div id="gates-container" class="link position-absolute" data-value="gates">
+                <div href="?location=gates" id="gates-container" class="link position-absolute" data-value="gates">
                     <img alt="gates hall colored" id="gates-color" class="map-img" src="/public/images/gates-color.png">
                     <img alt="gates hall" id="gates" class="position-absolute hover map-img" src="/public/images/gates.png">
                 </div>
 
-                <div id="bethe-container" class="link position-absolute" data-value="bethe">
+                <div href="?location=bethe" id="bethe-container" class="link position-absolute" data-value="bethe">
                     <img alt="hans bethe house colored" id="bethe-color" class="map-img" src="/public/images/bethe-color.png">
                     <img alt="hans bethe house" id="bethe" class="position-absolute hover map-img" src="/public/images/bethe.png">
                 </div>
@@ -81,8 +83,17 @@
             </div>
         </div>
 
-        <div id="modal" class="position-absolute">
-            <a id="closeBtn" class="btn-close"></a>
+        <!-- <div id="modal" class="position-absolute <?php if ($close == 1) { echo 'slide-up'; } else if ($location) { echo 'slide-down '; } ?> ">
+            <h1><?php echo $location ?></h1>
+            <a href="/?close=1" id="closeBtn" class="btn-close"></a>
+        </div> -->
+        <div id="modal" class="position-fixed slide-up">
+            <div class="d-flex justify-content-end">
+                <button id="closeBtn" class="btn-close mt-4 me-4"></button>
+            </div>
+
+            <?php include("includes/zeus.php"); ?>
+            <?php include("includes/beebe.php"); ?>
         </div>
     </div>
     <script type="text/javascript" src="/public/scripts/effects.js"></script>
