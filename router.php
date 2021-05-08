@@ -52,9 +52,9 @@ if (preg_match('/^\/public\//', $request_uri) || $request_uri == '/favicon.ico')
   // serve the requested resource as-is.
   return False;
 } else if (match_routes($request_uri, ['/', '/home'])) {
-  require 'pages/index.php';
+  require 'public/pages/index.php';
 } else {
   error_log("  404 Not Found: " . $request_uri);
   http_response_code(404);
-  require 'pages/404.php';
+  require 'public/pages/404.php';
 }
