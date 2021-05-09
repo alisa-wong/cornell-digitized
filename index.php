@@ -1,15 +1,3 @@
-<?php
-// $locations = array("zeus", "kennedy", "beebe", "gates", "dickson", "bethe");
-
-// $close = $_GET["close"];
-// $location = $_GET["location"];
-
-// if ($location && !in_array($location, $locations)) {
-//     $location = "";
-// }
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -87,13 +75,17 @@
             <h1><?php echo $location ?></h1>
             <a href="/?close=1" id="closeBtn" class="btn-close"></a>
         </div> -->
-        <div id="modal" class="position-fixed slide-up">
-            <div class="d-flex justify-content-end">
-                <button id="closeBtn" class="btn-close mt-4 me-4"></button>
+        <div id="modal" class="position-fixed">
+            <div id="modal-header" class="position-fixed d-flex justify-content-end align-items-center bg-white">
+                <button id="closeBtn" class="btn-close me-4"></button>
             </div>
 
             <?php include("includes/zeus.php"); ?>
             <?php include("includes/beebe.php"); ?>
+            <?php include("includes/bethe.php"); ?>
+            <?php include("includes/dickson.php"); ?>
+            <?php include("includes/gates.php"); ?>
+            <?php include("includes/kennedy.php"); ?>
         </div>
     </div>
     <script type="text/javascript" src="/public/scripts/effects.js"></script>

@@ -12,20 +12,10 @@ pauseBtn.addEventListener("click", function() {
 
 $(document).ready(function () {
     let modal = $("#modal");
-    // console.log($("#modal.slide-down"));
-    // if ($("#modal.slide-down").length != 0) {
-    //     console.log("sliding up");
-    //     $(modal).removeClass('slide-down'); 
-    //     $(modal).addClass("slide-up", 1000, 'easeOutBounce');
-    // } else if ($("#modal.slide-up").length != 0) {
-    //     console.log("sliding down");
-    //     $(modal).addClass("slide-down", 1000, 'easeOutBounce');
-    //     $(modal).removeClass('slide-up'); 
-    // }
 
     $(".link").on("click", function (e) {
         console.log("modal open");
-        $(modal).addClass("slide-up", 500, 'easeOutBounce');
+        $(modal).addClass("slide-up", 300, 'easeOutBounce');
         $(modal).removeClass('slide-down'); 
         let location = $(e.currentTarget).data("value");
         console.log(location);
@@ -33,18 +23,15 @@ $(document).ready(function () {
         $(locationModal).removeClass("hidden");
         setTimeout( function() {
             $(locationModal).fadeTo('slow', 1)
-            $("#map-container").addClass("hidden");
         }, 1500);
     })
     $("#closeBtn").on("click", function(e) {
         console.log("modal close");
-        $("#map-container").removeClass("hidden");
-        $(modal).addClass("slide-down", 1000, 'easeOutBounce');
+        console.log(e);
+        $(modal).addClass("slide-down", 500, 'easeOutBounce');
         $(modal).removeClass('slide-up'); 
-        let location = $(modal).find(".location-content").data("value");
-        let locationModal = $("#" + location + "-modal");
-        console.log(location);
-        $(locationModal).addClass("hidden");
-        $(locationModal).css("opacity", 0);
+        setTimeout( function() {
+            $(modal).find(".location-content").addClass("hidden").css("opacity", 0);
+        }, 500);
     })
 })
