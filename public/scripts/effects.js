@@ -21,6 +21,7 @@ $(document).ready(function () {
         console.log(location);
         let locationModal = $("#" + location + "-modal");
         $(locationModal).removeClass("hidden");
+        $(".modal-title").css("position", "fixed");
         setTimeout( function() {
             $(locationModal).fadeTo('slow', 1)
         }, 1500);
@@ -28,6 +29,7 @@ $(document).ready(function () {
     $("#closeBtn").on("click", function(e) {
         console.log("modal close");
         console.log(e);
+        $(".modal-title").css("position", "absolute");
         $(modal).addClass("slide-down", 500, 'easeOutBounce');
         $(modal).removeClass('slide-up'); 
         setTimeout( function() {

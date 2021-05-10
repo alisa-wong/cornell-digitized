@@ -13,7 +13,7 @@
 <body class="d-flex flex-column justify-content-center">
     <div id="content" class="d-flex position-relative">
         <div id="description" class="d-flex flex-column position-absolute">
-            <a href="/"><h1>i miss my campus</h1></a>
+            <h1>i miss my campus</h1>
             <p>welcome to cornell university from the perspective of a senior graduating during the COVID-19 pandemic</p>
             <div id="sound" class="d-flex flex-row"><p>chimes</p>
                 <div id="soundBtns" class="d-inline position-relative">
@@ -29,6 +29,8 @@
                     <source src="/public/media/almamater128.mp3" />   
                 </audio>
             </div>
+
+            <iframe src="https://open.spotify.com/embed/playlist/78NrXOErrZCyavEH9I4VUm" width="300" height="280" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
 
         <div id="map-container" class="me-4">
@@ -75,7 +77,7 @@
             <h1><?php echo $location ?></h1>
             <a href="/?close=1" id="closeBtn" class="btn-close"></a>
         </div> -->
-        <div id="modal" class="position-fixed">
+        <div id="modal" class="position-fixed slide-up">
             <div id="modal-header" class="position-fixed d-flex justify-content-end align-items-center bg-white">
                 <button id="closeBtn" class="btn-close me-4"></button>
             </div>

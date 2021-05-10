@@ -26,15 +26,10 @@ em {
 }
 
 #description {
-    top: 32%;
+    top: 22%;
     max-width: 20rem;
     margin-left: 8%;
     z-index: 1;
-}
-
-#description a {
-    color: black;
-    text-decoration: none;
 }
 
 #sound p {
@@ -98,9 +93,22 @@ em {
     /* box-shadow: 0 4px 20px -3px lightgrey; */
 }
 
+.smaller {
+    flex: 2;
+}
+
+.larger {
+    flex: 4;
+}
+
 .location-content {
     padding-top: 10rem;
-    opacity: 0;
+    /* opacity: 0; */
+}
+
+.location-content img {
+    width: 100%;
+    height: auto;
 }
 
 /* map styling */

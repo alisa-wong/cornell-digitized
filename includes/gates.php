@@ -11,7 +11,9 @@
             on coffee from the gimme inside gates. i love their coffee so much, i 
             made sure to buy a bag of leftist espresso for my family for christmas 
             this year, and was able to continue drinking gimme's coffee through quarantine 
-            over winter break.  
+            over winter break. i also recently walked to gates thinking gimme was open,
+            only to walk around campus for half an hour because i got there "before the 
+            opening time" when in reality it was temporarily closed.  
         </p>
     </div>
 
