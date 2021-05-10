@@ -1,4 +1,4 @@
-<div id="dickson-modal" class=" position-relative location-content ps-5 pe-5" data-value="dickson">
+<div id="dickson-modal" class="hidden position-relative location-content ps-5 pe-5" data-value="dickson">
     <h1 class="modal-title bg-white pb-2 ps-5">clara dickson hall</h1>
 
     <div class="d-flex flex-row mb-5 align-items-center">
