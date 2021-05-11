@@ -1,5 +1,5 @@
-<div id="gates-modal" class="hidden position-relative location-content ps-5 pe-5" data-value="gates">
-    <h1 class="modal-title position-absolute bg-white pb-2 ps-5">gates hall</h1>
+<div id="gates-modal" class="hidden position-relative location-content" data-value="gates">
+    <h1 class="modal-title bg-white pb-2">gates hall</h1>
 
     <div class="d-flex flex-row align-items-center">
         <div class="smaller">

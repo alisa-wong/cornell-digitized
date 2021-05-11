@@ -25,6 +25,11 @@ em {
     font-style: italic;
 }
 
+.subtext {
+    color: lightgrey;
+    font-size: 0.7rem;
+}
+
 #description {
     top: 22%;
     max-width: 20rem;
@@ -54,6 +59,41 @@ em {
 
 #soundBtns img {
     width: 100%;
+}
+
+/* about modal */
+#about-btn {
+    right: 30px;
+    top: 10px;
+    z-index: 2;
+}
+
+#about-modal-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 3;
+}
+
+#about-modal {
+    width: 40%;
+    height: 70%;
+    overflow: scroll;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#about-modal p.subtext {
+    width: 100%;
+    text-align: right;
+}
+
+#close-about {
+    top: 30px;
+    right: 25px;
 }
 
 /* modal styling */
@@ -89,7 +129,7 @@ em {
 .modal-title {
     width: 100%;
     top: 50px;
-    left: 0;
+    left: 5rem;
     /* box-shadow: 0 4px 20px -3px lightgrey; */
 }
 
@@ -102,13 +142,28 @@ em {
 }
 
 .location-content {
+    padding: 8rem;
     padding-top: 10rem;
-    /* opacity: 0; */
+    opacity: 0;
 }
 
 .location-content img {
     width: 100%;
     height: auto;
+}
+
+.slope img {
+    width: 80%;
+    left: -60px;
+}
+
+.slope p {
+    width: 50%;
+    right: 0;
+}
+
+#bethe-modal > div > .smaller {
+    flex: 1
 }
 
 /* map styling */

@@ -1,9 +1,11 @@
-<div id="bethe-modal" class="hidden position-relative location-content ps-5 pe-5" data-value="bethe">
-    <h1 class="modal-title position-absolute bg-white pb-2 ps-5">hans bethe house</h1>
+<div id="bethe-modal" class="hidden position-relative location-content" data-value="bethe">
+    <h1 class="modal-title bg-white pb-2">hans bethe house</h1>
 
-    <div class="d-flex flex-row mb-5">
-        <img src="public/images/bethe-color.png" class="me-5">
-        <p>
+    <div class="d-flex flex-row-reverse mb-5 align-items-center">
+        <div class="smaller ms-5">
+            <img src="public/images/alarm.png"> 
+        </div>
+        <p class="larger">
             sophomore year, i lived in a suite on west campus with 3 of my friends from freshman year,
             and one random roommate. this was also the only year i actually lived with a 
             roommate in a double. it worked out perfectly since my roommate and i pretty much 
@@ -24,16 +26,19 @@
         continue to enjoy our meals together. 
     </p>
 
-    <p class="mb-5">
-        saturday mornings, i would have my weekly meetings for my project team. as a night 
-        person, waking up on a saturday morning was painful enough. i always woke up with 10 
-        min to get there, then would show up to the meetings sweaty and out of breath 
-        after speed walking up the slope. even after walking up the same path pretty much every 
-        day of my sophomore year, it never got easier. after the meetings though, my friends 
-        and i would walk back down the slope towards west and got dimsum at cook. though we can't 
-        go back to cook's dining hall (and i'm not on the project team anymore...), the same group 
-        of friends made sure to somewhat continue the tradition and catch up over food at one 
-        our houses to remain safe.
-    </p>
+    <div class="slope position-relative">
+        <img src="public/images/slope.png" class="position-absolute"> 
+        <p class="position-absolute text-end">
+            saturday mornings, i would have my weekly meetings for my project team. as a night 
+            person, waking up on a saturday morning was painful enough. i always woke up with 10 
+            min to get there, then would show up to the meetings sweaty and out of breath 
+            after speed walking up the slope. even after walking up the same path pretty much every 
+            day of my sophomore year, it never got easier. after the meetings though, my friends 
+            and i would walk back down the slope towards west and got dimsum at cook. though we can't 
+            go back to cook's dining hall (and i'm not on the project team anymore...), the same group 
+            of friends made sure to somewhat continue the tradition and catch up over food at one 
+            our houses to remain safe.
+        </p>
+    </div>
 
 </div>

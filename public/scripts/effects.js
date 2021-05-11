@@ -37,3 +37,14 @@ $(document).ready(function () {
         }, 500);
     })
 })
+
+function toggleAbout() {
+    let aboutModal = document.getElementById("about-modal-container");
+    // let aboutModal = $("#about-modal-container");
+    console.log((aboutModal).classList);
+    if (aboutModal.classList.contains("hidden")) {
+        aboutModal.classList.remove("hidden");
+    } else  {
+        aboutModal.classList.add("hidden");
+    }
+}

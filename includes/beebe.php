@@ -1,18 +1,28 @@
-<div id="beebe-modal" class="hidden position-relative location-content ps-5 pe-5" data-value="beebe">
-    <h1 class="modal-title position-absolute bg-white pb-2 ps-5">beebe lake</h1>
+<div id="beebe-modal" class="hidden position-relative location-content" data-value="beebe">
+    <h1 class="modal-title bg-white pb-2">beebe lake</h1>
 
-    <div class="d-flex flex-row mb-5">
-        <img src="public/images/beebe-color.png" class="me-5">
-        <p>
-            one of my first most vivid memories at cornell was at beebe lake! 
-            i came in april 2017 for cornell days when i was still deciding on 
-            where to go for college. my friend from high school and i went together
-            and got to kayak in beebe lake. it was that visit when i
-            realized that i wanted to go to cornell.
-        </p>
+    <div class="d-flex flex-row align-items-center mb-5">
+        <div class="smaller me-5">
+            <img src="public/images/bridge.png"> 
+        </div>
+        <div class="larger">
+            <p class="mb-3">
+                one of my first most vivid memories at cornell was at beebe lake! 
+                i came in april 2017 for cornell days when i was still deciding on 
+                where to go for college. my friend from high school and i went together
+                and got to kayak in beebe lake. it was that visit when i
+                realized that i wanted to go to cornell.
+            </p>
+
+            <p>
+                my friend and i came to cornell together, and were cs partners our first
+                two semesters. we've continued to stay friends since then, ended up 
+                in the same major, and will both be in nyc after graduation! 
+            </p>
+        </div>
     </div>
 
-    <p class="mb-5">
+    <p>
         now, beebe lake is a classic walk destination for me. staying in my apartment
         all day all year has felt extremely restricting and tiresome, so i try to change
         up the scenery by going outside. i'm still not great at staying active

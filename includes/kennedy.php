@@ -1,5 +1,5 @@
-<div id="kennedy-modal" class="hidden position-relative location-content ps-5 pe-5" data-value="kennedy">
-    <h1 class="modal-title bg-white pb-2 ps-5">kennedy hall</h1>
+<div id="kennedy-modal" class="hidden position-relative location-content" data-value="kennedy">
+    <h1 class="modal-title bg-white pb-2">kennedy hall</h1>
 
     <div class="d-flex flex-row mb-5">
         <p>
@@ -65,7 +65,7 @@
         </p>
     </div> 
 
-    <p class="mb-5">
+    <p>
         lastly, i will always remember the one time i waited over an hour outside kennedy auditorium
         for my networks prelim when there was a printing issue with the exams. it's crazy to think 
         that i will never have to take a prelim ever again (thank god).

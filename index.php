@@ -30,8 +30,11 @@
                 </audio>
             </div>
 
-            <iframe src="https://open.spotify.com/embed/playlist/78NrXOErrZCyavEH9I4VUm" width="300" height="280" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed/playlist/78NrXOErrZCyavEH9I4VUm" width="250" height="280" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
+
+        <h3 id="about-btn" onclick="toggleAbout()" class="position-absolute mt-3">about</h3>
+        <?php include("includes/about.php") ?>
 
         <div id="map-container" class="me-4">
             <div id="map" class="position-relative">
